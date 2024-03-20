@@ -33,5 +33,3 @@ stages:
       environment: dev
       service_connection: 'DevTestServiceConnection'
       working_directory: $(working_directory)
-
-
