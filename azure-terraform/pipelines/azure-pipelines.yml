@@ -31,7 +31,7 @@ stages:
     parameters:
       project_name: ${{ variables.project_name }}
       environment: dev
-      service_connection: 'Azure MVP Sponsorship'
+      service_connection: 'DevTestServiceConnection'
       working_directory: $(working_directory)
 
   - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}:
@@ -39,5 +39,5 @@ stages:
       parameters:
         project_name: ${{ variables.project_name }}
         environment: prd
-        service_connection: 'Azure MVP Sponsorship'
+        service_connection: 'DevTestServiceConnection'
         working_directory: $(working_directory)
