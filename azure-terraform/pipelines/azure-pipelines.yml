@@ -34,10 +34,4 @@ stages:
       service_connection: 'DevTestServiceConnection'
       working_directory: $(working_directory)
 
-  - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}:
-    - template: release-stage.yml
-      parameters:
-        project_name: ${{ variables.project_name }}
-        environment: prd
-        service_connection: 'DevTestServiceConnection'
-        working_directory: $(working_directory)
+
