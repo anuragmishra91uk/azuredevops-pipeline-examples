@@ -3,8 +3,8 @@ set -xe
 
 TENANT_ID=$(az account show --query tenantId -o tsv)
 SUBSCRIPTION_ID=$(az account show --query id -o tsv)
-storage_account_name=stestfdemoterradev
-STATE_RESOURCEGROUP_NAME=rg-estfdemo-terra-dev
+storage_account_name=csg100320016024556c
+STATE_RESOURCEGROUP_NAME=cloud-shell-storage-centralindia
 
 terraform init -upgrade \
   -backend-config=storage_account_name=$storage_account_name \
